@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 12pt;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(249, 248, 247);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    line-height: 1.3;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.headline {
+    font-size: 14pt;
+    font-weight: 600;
+    margin: 0;
+}
+
+.subheadline {
+    font-size: 12pt;
+    font-weight: normal;
+    margin: 0px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.highlight-background {
+    background-color: rgb(255, 88, 79);
+}
+
+.highlight-foreground {
+    color: rgb(255, 88, 79);
+}
+
+.highlight-background .headline,
+.highlight-background .subheadline {
+    color: white;
+}
+
+iframe {
+    border: none;
+    flex: 1;
+}
+
+.frame header {
+    text-align: center;
+}
+
+.row {
+    display: block;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+}
+
+.max-height {
+    height: 100%;
+}
+
+.navigation {
+    max-width: 250px;
+    min-width: 125px;
+}
+
+.frame table {
+    padding-left: 8px;
+    padding-right: 8px;;
+}
+
+.frame table td:first-child {
+    padding-right: 10px;
+}
+
+.common-information {
+    height: 200px;
+    flex-shrink: 0;
+}
+
+@media (min-width: 544px) {
+    .row {
+        display: flex;
+    }
+
+    .navigation {
+        max-width: 250px;
+        min-height: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame-1 .row {
+        display: block;
+    }
+
+    .frame-1 table {
+        width: 100%;
+    }
+
+    .frame-1 table td:first-child {
+        width: 100px;
+    }
+
+    .common-information {
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .frame-1 table {
+        padding-left: 25px;
+        padding-right: 25px
+    }
+}
