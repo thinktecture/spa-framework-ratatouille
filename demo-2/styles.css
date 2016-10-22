@@ -84,8 +84,8 @@ iframe {
 }
 
 .common-information {
-    height: 200px;
     flex-shrink: 0;
+    margin-bottom: 10px;
 }
 
 .menu-item {
@@ -118,6 +118,22 @@ iframe {
     margin-top: 0;
 }
 
+#content > div {
+    display: none;
+}
+
+#content.home > div:nth-child(1) {
+    display: block;
+}
+
+#content.profile > div:nth-child(2) {
+    display: block;
+}
+
+#content.todo > div:nth-child(3) {
+    display: block;
+}
+
 @media (min-width: 544px) {
     .row {
         display: flex;
@@ -136,7 +152,6 @@ iframe {
 
     .navigation {
         max-width: inherit;
-        height: 210px;
     }
 }
 
@@ -151,10 +166,6 @@ iframe {
 
     .frame-1 table td:first-child {
         width: 100px;
-    }
-
-    .common-information {
-        height: 400px;
     }
 }
 
