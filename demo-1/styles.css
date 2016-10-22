@@ -48,6 +48,7 @@ strong {
 iframe {
     border: none;
     flex: 1;
+    width: 100%;
 }
 
 .frame header {
@@ -86,6 +87,44 @@ iframe {
     flex-shrink: 0;
 }
 
+.menu {
+    border-right: 1px solid rgb(134, 134, 134);
+}
+
+.menu-item {
+    background-color: rgb(134, 134, 134);
+    color: white;
+    padding: 15px;
+}
+
+.menu-item:hover {
+    background-color: black;
+}
+
+.menu-item + .menu-item {
+    border-top: 1px solid white;
+}
+
+.frame header {
+    padding: 8px;
+}
+
+.frame-2 header, .frame-3 header {
+    margin-bottom: 0;
+}
+
+.frame-3 div {
+    padding: 8px;
+}
+
+.frame-3 h1 {
+    margin-top: 0;
+}
+
+.frame-3 #todo, .frame-3 #profile {
+    display: none;
+}
+
 @media (min-width: 544px) {
     .row {
         display: flex;
@@ -94,6 +133,21 @@ iframe {
     .navigation {
         max-width: 250px;
         min-height: 125px;
+    }
+}
+
+@media (max-width: 544px) {
+    .row.common-information {
+        display: flex;
+    }
+
+    .menu {
+        border-right: none;
+    }
+
+    .navigation {
+        max-width: inherit;
+        height: 210px;
     }
 }
 
