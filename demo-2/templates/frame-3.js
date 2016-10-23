@@ -3,7 +3,7 @@
 function onMessage(event) {
     // For production always check the full url here.
     // For this demo, we just check the port
-    if (event.origin.indexOf(':8080') === -1) {
+    if (event.origin.indexOf(':7070') === -1) {
         return;
     }
 
