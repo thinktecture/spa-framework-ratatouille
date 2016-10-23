@@ -3,6 +3,7 @@
 var signaturePadElement = document.querySelector('#signature');
 new SignaturePad(signaturePadElement);
 
+/* Schnittstelle nach außen zum Setzen der Höhe und der Breite */
 var width = getParameterByName('width');
 var height = getParameterByName('height');
 
