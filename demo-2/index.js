@@ -13,6 +13,8 @@ function onMessage(event) {
         return;
     }
 
+    console.log('MAIN: Received message', event.data);
+
     if (event.data.type === 'resize') {
         handleResizeMessage(event.data);
     }
@@ -31,6 +33,7 @@ function handleResizeMessage(event) {
 }
 
 function handleNavigation(event) {
+    console.log('Sending message to FRAME-3', event.data);
     frames['frame-3'].contentWindow.postMessage(event, '*');
 }
 

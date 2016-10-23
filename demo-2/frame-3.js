@@ -7,6 +7,8 @@ function onMessage(event) {
         return;
     }
 
+    console.log('FRAME-3: Received message');
+
     if (event.data.type === 'navigate') {
         handleNavigate(event.data);
     }

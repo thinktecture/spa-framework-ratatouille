@@ -3,6 +3,7 @@
 var container = document.querySelector('.container');
 
 function onResize() {
+    console.log('FRAME-2 -> MAIN: Sending resize message');
     // Don't use star for production cases. Always use a specific target.
     // For development and demo star is "ok".
     window.parent.postMessage({
@@ -15,6 +16,7 @@ function onResize() {
 window.addEventListener('resize', onResize);
 
 function navigate(to) {
+    console.log('FRAME-1 -> MAIN: Sending navigation message');
     window.parent.postMessage({
         type: 'navigate',
         data: to
