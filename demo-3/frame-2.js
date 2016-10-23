@@ -26,8 +26,11 @@ items[0].addEventListener('click', function () {
     navigate('home');
 });
 items[1].addEventListener('click', function () {
-    navigate('profile');
+    navigate('contract-1');
 });
 items[2].addEventListener('click', function () {
+    navigate('contract-2');
+});
+items[3].addEventListener('click', function () {
     navigate('todo');
 });
